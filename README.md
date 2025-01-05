@@ -47,6 +47,13 @@ It hides your ip address, cloaks your online traffic, hides your device and onli
 
 Now your mobile device cyber sec is stronger and hardened also you should feel and see the increase in your internet speeds if you're stuck please take a look at my screenshots below screenshots are not in order.
 
+{FINAL CHECKS}
+Make sure app tracking is Turned off for orbot
+
+allow background Network connectivity and battery for both apps 
+
+use this with wifi more than network data
+
 Thank you 
 
 -ZłO
