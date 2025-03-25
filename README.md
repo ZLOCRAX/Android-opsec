@@ -1,7 +1,7 @@
 # Android-opsec
 Here i will show and explain a quick and easy method for better on device cyber sec for android devices
 
-Hello today i am going to show a quick and easy method to cyber secure device when browsing online or using social media, i will tell you How to protect against phising and malware, hide your ip, stop your data getting taken and secure your Device. This way is for people who don't know anything about opsec i will be releasing a another repository soon for people who want to secure and encrypt there data more showing a much more in depth method with ways of how to set up i2p, a proxy, dnscrypt and dev settings etc etc. Anyways lets get on to this method for the people who dont know and use vpn services, cloudflare and google dns. 
+Hello today i am going to show a quick and easy method to cyber secure your device when browsing online or using social media, i will tell you How to protect against phising and malware, hide your ip, stop your data being mined and secure your Device. This way is for people who don't know anything about opsec and cyber security. Anyways lets get on to this method for the people who dont know anything about cyber sec and use paid for vpn services, cloudflare and google dns. 
 
 THINGS YOU WILL NEED:   
 Android 10 or above device,   
@@ -9,7 +9,7 @@ DuckDuckgo app
 https://duckduckgo.com/app,   
 Orbot app    https://github.com/guardianproject/orbot/releases/tag/17.3.2-RC-1-tor-0.4.8.12    
 Tuta mail app     
-https://f-droid.org/repo/de.tutao.tutanota_396463.apk
+https://f-droid.org/repo/de.tutao.tutanota_396463.apk    
 I suggest not to download these apps from google playstore as google does track you and it is best to stop as many leaks as possible.
 
 Now lets move on to setting everything up perfectly to work and protect you,
