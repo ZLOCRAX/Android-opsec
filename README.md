@@ -8,6 +8,8 @@ Android 10 or above device,
 DuckDuckgo app    
 https://duckduckgo.com/app,   
 Orbot app    https://github.com/guardianproject/orbot/releases/tag/17.3.2-RC-1-tor-0.4.8.12    
+Tuta mail app     
+https://f-droid.org/repo/de.tutao.tutanota_396463.apk
 I suggest not to download these apps from google playstore as google does track you and it is best to stop as many leaks as possible.
 
 Now lets move on to setting everything up perfectly to work and protect you,
@@ -44,6 +46,13 @@ After this please click back then click choose how to connect and click direct c
 
 What this does:      
 It hides your ip address, cloaks your online traffic, hides your device and online fingerprint. 
+
+Step4(temp mail):
+To be in control of your own emails and keep them encrypted and private this is the best way that i found
+Tuta mail is the best mailing service you can use it keeps all data encrypted spoofing your location i also reccomend using .de as it is German. Tuta mail has 0 trackers, 0 ads and 0 data mining and 0 snooping, stopping anyone grabbing any type of info from the email header to further improve your email security hook up a tuta mail address to a duck address (temp emails) and use duck addresses across applications and websites you use to stop any phishers/doxxers getting your original email.
+
+what this does:
+keeps your emails private and protected no matter where you use them online
 
 Now your mobile device cyber sec is stronger and hardened also you should feel and see the increase in your internet speeds if you're stuck please take a look at my screenshots below screenshots are not in order.
 
