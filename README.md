@@ -10,6 +10,9 @@ https://duckduckgo.com/app,
 Orbot app    https://github.com/guardianproject/orbot/releases/tag/17.3.2-RC-1-tor-0.4.8.12    
 Tuta mail app     
 https://f-droid.org/repo/de.tutao.tutanota_396463.apk    
+fake traveler app       
+https://f-droid.org/repo/cl.coders.faketraveler_200.apk
+
 I suggest not to download these apps from google playstore as google does track you and it is best to stop as many leaks as possible.
 
 Now lets move on to setting everything up perfectly to work and protect you,
@@ -53,6 +56,11 @@ Tuta mail is the best mailing service you can use it keeps all data encrypted sp
 
 what this does:
 keeps your emails private and protected no matter where you use them online
+
+Step 5(mock location): once you have downloaded the fake traveller apk please choose any location on the map and click apply, once this is done go into device settings then head into about phone scroll down to the bottom and click build number several times to unlock dev settings. Now head on into dev settings scroll down to mock location app and choose fake traveller. Also whilst you are in dev settings go ahead and switch on non persistent mac to work along side mac randomisation. Also turn on tethering hardware acceleration.
+
+What this does: spoofs your phones geo location to somewhere completely different in the world so that apps that use your location will never truly know where you are.
+
 
 Now your mobile device cyber sec is stronger and hardened also you should feel and see the increase in your internet speeds if you're stuck please take a look at my screenshots below screenshots are not in order.
 
