@@ -1,5 +1,5 @@
 # Android-opsec
-Here i will show and explain a quick and easy method for better on device cyber sec for android devices
+Here i will show and explain a quick and easy method for better on device cyber sec for android devices (this is a proxy)
 
 Hello today i am going to show a quick and easy method to cyber secure your device when browsing online or using social media, i will tell you How to protect against phising and malware, hide your ip, stop your data being mined and secure your Device. This way is for people who don't know anything about opsec and cyber security. Anyways lets get on to this method for the people who dont know anything about cyber sec and use paid for vpn services, cloudflare and google dns. 
 
@@ -18,7 +18,7 @@ I suggest not to download these apps from google playstore as google does track 
 Now lets move on to setting everything up perfectly to work and protect you,
 
 Step1(dns&macchange):     
-Please go into network and internet settings and click onto private dns click Private DNS provider and input this url dns.quad9.net click save after click on internet and then your network name afterwards click network usage and treat as unmetered afterwards click privacy and use randomised MAC now exit settings.
+Please go into network and internet settings and click onto private dns click Private DNS provider and input this url dns.quad9.net click save after click on internet and then your network name afterwards click network usage and treat as unmetered afterwards click privacy and use randomised MAC and turn off send device name now exit settings.
 
 What this does:    
 qaud9 dns will protect you against malware and phising and do not store or collect any of your data to stop phising leaks unlike google and cloudflare do. 
