@@ -1,85 +1,59 @@
-# Android-opsec
-Here i will show and explain a quick and easy method for better on device cyber sec for android devices (this is a proxy)
+# Android OPSEC Guide
 
-Hello today i am going to show a quick and easy method to cyber secure your device when browsing online or using social media, i will tell you How to protect against phising and malware, hide your ip, stop your data being mined and secure your Device. This way is for people who don't know anything about opsec and cyber security. Anyways lets get on to this method for the people who dont know anything about cyber sec and use paid for vpn services, cloudflare and google dns. 
+This repository provides a straightforward guide to enhancing operational security (OPSEC) and cybersecurity on Android devices. It focuses on protecting against phishing, malware, IP tracking, data mining and device fingerprinting using free, open source tools. This method acts as a proxy like setup for privacy conscious browsing and app usage, ideal for users new to cybersecurity who may currently rely on paid VPNs, Cloudflare or Google DNS.
 
-THINGS YOU WILL NEED:   
-Android 10 or above device,   
-DuckDuckgo app    
-https://duckduckgo.com/app,   
-Orbot app    https://github.com/guardianproject/orbot/releases/tag/17.3.2-RC-1-tor-0.4.8.12    
-Tuta mail app     
-https://f-droid.org/repo/de.tutao.tutanota_396463.apk    
-fake traveler app       
-https://f-droid.org/repo/cl.coders.faketraveler_200.apk
+**Note:** This guide is for Android 10 or later. It emphasizes privacy without requiring root access.
 
-I suggest not to download these apps from google playstore as google does track you and it is best to stop as many leaks as possible.
+## Requirements
+- Android device running version 10 or above.
+- **DuckDuckGo App Browser:** Download from [https://duckduckgo.com/app](https://duckduckgo.com/app).
+- **Orbot App:** Download from [https://github.com/guardianproject/orbot-android/releases/tag/17.8.0-RC-1-tor-0.4.8.21](https://github.com/guardianproject/orbot-android/releases/tag/17.8.0-RC-1-tor-0.4.8.21).
+- **Tuta Mail App:** Download from [https://f-droid.org/repo/de.tutao.tutanota_396578.apk](https://f-droid.org/repo/de.tutao.tutanota_396578.apk).
+- **Fake Traveler App:** Download from [https://f-droid.org/repo/cl.coders.faketraveler_222.apk](https://f-droid.org/repo/cl.coders.faketraveler_222.apk).
+**Recommendation:** Avoid downloading from the Google Play Store to minimize tracking. Use F-Droid or direct APK links instead.
+## Setup Instructions
+Follow these steps in order to configure your device for improved privacy and security.
+### Step 1: Configure DNS and MAC Randomization
+1. Go to **Settings > Network & Internet > Private DNS**.
+2. Select **Private DNS provider hostname** and enter `dns.quad9.net`. Save the changes.
+3. Go back to **Network & Internet > Internet**, select your network, then tap **Network usage** and set it to **Treat as unmetered**.
+4. In the same menu, go to **Privacy** and enable **Use randomized MAC**. Disable **Send device name**.
+### What this does:  
+Quad9 DNS blocks malicious domains, protects against malware and phishing, and does not log or collect user data (unlike Google or Cloudflare DNS). For more details, visit [https://www.quad9.net/](https://www.quad9.net/).  
+Setting the network as unmetered reduces monitoring. Randomized MAC changes your device's hardware identifier on networks, preventing tracking (e.g., it might appear as a random device like a fridge).
+### Step 2: Enable DuckDuckGo App Tracking Protection
+1. Open the DuckDuckGo app and complete the initial setup (recommended as your primary browser for zero trackers).
+2. Tap the three dots menu > **App Tracking Protection** > Enable.
+3. Go to **Settings > Network & Internet > VPN** and enable **Always-on VPN** for DuckDuckGo.
+### What this does:
+Blocks hidden trackers in apps that steal data for targeted ads or phishing. DuckDuckGo ensures private browsing without third party tracking.
+### Step 3: Configure Orbot for Tor Connectivity
+1. Open Orbot and allow notifications. **Do not connect yet** (to avoid conflicts with DNS and DuckDuckGo).
+2. Tap **More > Settings**.
+3. Enable **Power user mode** (prevents VPN mode).
+4. Scroll to **Connectivity** and enable all **Isolate** options (e.g., Isolate destination addresses).
+5. Go back, select **Choose how to connect > Direct connection to Tor**, then connect.
+### What this does:
+It encrypts traffic and obscures your online fingerprint using the Tor network. Isolation ensures apps route through separate circuits for better privacy.
+### Step 4: Set Up Secure Email with Tuta
+1. Open Tuta Mail and create an account (recommend using a `.de` domain for German privacy laws).
+2. For added security, link a temporary DuckDuckGo email alias to your Tuta account and use aliases for sign ups.
+### What this does:
+Tuta provides end-to-end encrypted email with zero trackers, ads, or data mining. It spoofs locations and protects metadata preventing phishing or doxxing via email headers.
+### Step 5: Spoof Location with Fake Traveler
+1. Open Fake Traveler, select a location on the map, and apply it.
+2. Go to **Settings > About phone** and tap **Build number** seven times to enable Developer options.
+3. In **Developer options**, scroll to **Select mock location app** and choose Fake Traveler.
+4. While in Developer options, enable **Non-persistent MAC** (complements randomization) and **Tethering hardware acceleration**.
+### What this does:
+Spoofs your device's geolocation, preventing apps from determining your real position.
+## Final Checks and Tips
+- Ensure App Tracking Protection is **off** for Orbot to avoid conflicts.
+- Allow background network and battery usage for DuckDuckGo and Orbot.
+- Prefer Wi-Fi over mobile data for better performance.
+- You should notice faster internet speeds and stronger privacy. If stuck contact us via our website: https://dresoperatingsystems.github.io/.
 
-Now lets move on to setting everything up perfectly to work and protect you,
-
-Step1(dns&macchange):     
-Please go into network and internet settings and click onto private dns click Private DNS provider and input this url dns.quad9.net click save after click on internet and then your network name afterwards click network usage and treat as unmetered afterwards click privacy and use randomised MAC and turn off send device name now exit settings.
-
-What this does:    
-qaud9 dns will protect you against malware and phising and do not store or collect any of your data to stop phising leaks unlike google and cloudflare do. 
-
-"Quad9 is a free service that replaces your default ISP or enterprise Domain Name Server (DNS) configuration. When your computer performs any Internet transaction that uses the DNS (and most transactions do), Quad9 blocks lookups of malicious host names from an up-to-the-minute list of threats. This blocking action protects your computer, mobile device, or IoT systems against a wide range of threats such as malware, phishing, spyware, and botnets, and it can improve performance in addition to guaranteeing privacy. The Quad9 DNS service is operated by the Swiss-based Quad9 Foundation, whose mission is to provide a safer and more robust Internet for everyone."
-
-To check out the qaud9 project you can find them here
-   https://www.quad9.net/
-
-Setting your  network as unmetered stops most types of network monitoring where as metered allows network monitoring to keep in line with your network costs.
-
-Randomising your mac allows the number that can be used to locate your device in networks to be different every time you have an internet connection rather than your device info and company shown it will show a random one instead like sometimes your device could be a fridge.
-
-Step2(DDG):     
-Please go into DDG if you haven't set it up yet please do so (also i suggest making this your main browser as they truly do protect and secure your browsing with 0 hidden trackers) after setting up DDG click the 3 dots then click app tracking then enable please go into vpn settings in network and internet then enable always on vpn.
-
-What this does:     
-Any trackers aka data stealers hidden within applications you use will all be blocked, so anyone trying to phish for info and the applications company trackers that take your data and sell it to show you "3rd party ads"
-
-Step3(orbot):      
-Please go into the orbot application allow notifications do not click connect it will mess with both the dns settings and DDG app tracking, click more then settings then follow these steps below,
-
-Enable power user mode to stop it becoming a vpn connection.
-
-Scroll down to connectivity tick all the isolate settings
-
-After this please click back then click choose how to connect and click direct connection to tor then click connect 
-
-What this does:      
-It hides your ip address, cloaks your online traffic, hides your device and online fingerprint. 
-
-Step4(temp mail):
-To be in control of your own emails and keep them encrypted and private this is the best way that i found
-Tuta mail is the best mailing service you can use it keeps all data encrypted spoofing your location i also reccomend using .de as it is German. Tuta mail has 0 trackers, 0 ads and 0 data mining and 0 snooping, stopping anyone grabbing any type of info from the email header to further improve your email security hook up a tuta mail address to a duck address (temp emails) and use duck addresses across applications and websites you use to stop any phishers/doxxers getting your original email.
-
-what this does:
-keeps your emails private and protected no matter where you use them online
-
-Step 5(mock location): once you have downloaded the fake traveller apk please choose any location on the map and click apply, once this is done go into device settings then head into about phone scroll down to the bottom and click build number several times to unlock dev settings. Now head on into dev settings scroll down to mock location app and choose fake traveller. Also whilst you are in dev settings go ahead and switch on non persistent mac to work along side mac randomisation. Also turn on tethering hardware acceleration.
-
-What this does: spoofs your phones geo location to somewhere completely different in the world so that apps that use your location will never truly know where you are.
-
-
-Now your mobile device cyber sec is stronger and hardened also you should feel and see the increase in your internet speeds if you're stuck please take a look at my screenshots below screenshots are not in order.
-
-{FINAL CHECKS}
-Make sure app tracking is Turned off for orbot
-
-allow background Network connectivity and battery for both apps 
-
-use this with wifi more than network data
-
-Thank you 
-
--ZłO
-
-![1000651326](https://github.com/user-attachments/assets/4c8705e0-47e1-4510-979a-ca8cf1acc913)
-![1000651324](https://github.com/user-attachments/assets/91a01626-7d04-41ed-ac65-e7db33889d26)
-![1000651321](https://github.com/user-attachments/assets/439d935d-0025-4cb9-84b1-dc698cdcb6e1)
-![1000651332](https://github.com/user-attachments/assets/cba123da-3da3-4ef7-ba71-f4ecca51b49d)
-![1000651330](https://github.com/user-attachments/assets/0937d694-cd8e-4769-b59c-bce8121e45a3)
-![1000651328](https://github.com/user-attachments/assets/fbbf23a6-89ea-4d50-8786-21245320f139)
-![1000651319](https://github.com/user-attachments/assets/913bff15-5b98-4ef2-94fc-4bcff3401a62)
-![1000651317](https://github.com/user-attachments/assets/105358f8-fb80-4dfa-8f7c-3bb04a0563a7)
+After setup, your device will have hardened cybersecurity reducing risks from online threats.
+---
+**Thank you for using this guide.**
+**The DresOS Team**  
