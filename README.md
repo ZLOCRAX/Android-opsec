@@ -55,5 +55,5 @@ Spoofs your device's geolocation, preventing apps from determining your real pos
 
 After setup, your device will have hardened cybersecurity reducing risks from online threats.
 ---
-**Thank you for using this guide.**
+**Thank you for using this guide.**     
 **The DresOS Team**  
